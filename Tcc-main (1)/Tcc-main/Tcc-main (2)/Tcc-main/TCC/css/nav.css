@@ -1,0 +1,138 @@
+.listaNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navResponsivo
+{
+    display: none;
+}
+
+.navInfo
+{
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 50px;
+    width: 600px;
+
+}
+
+.navInfo a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+.navInfo a:hover{
+    color: #ff9a00 ;
+    border-bottom: 2px solid #ff9a00;
+}
+
+
+.icones{
+    margin-right: 100px ;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.icones a{
+    color: white;
+}
+
+video
+{
+    position: fixed;
+    z-index: 1;
+}
+
+.navBar
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#btn-mobile
+{
+    display: none;
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    z-index: 10001;
+    background: transparent;
+}
+
+.imagemResponsivo{
+    display: none;
+}
+
+@media (max-width:600px){
+    #btn-mobile{
+        display: block;
+    }
+    .navInfo{
+        display: none;
+    }
+
+    .navResponsivo{
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        top: 188%;
+        right: 2%;
+        width: 200px;
+        height: 39vh;
+        background-color: #081974;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        text-align: center;
+        margin-top: -75px;
+        
+    }
+    .navResponsivo a{
+        color: white;
+        text-decoration: none;
+        padding: 0;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        
+        
+    }
+    .navResponsivo a:hover{
+        color: #ff9a00 ;
+        border-bottom: 2px solid #ff9a00;
+    }
+    .icones{
+        display: none;
+    }
+    video{
+        display: none;
+    }
+ 
+    .imagemResponsivo{
+        display: block;
+        position: fixed;
+        z-index: 1;
+        height: 100vh;
+    }
+
+    .navBar .active .navInfo{
+        display: flex;
+    }
+
+}
