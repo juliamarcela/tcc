@@ -1,19 +1,78 @@
-p{
-    margin-bottom: 0;
-    margin-top: 0;
+*{
+    box-sizing: border-box;
 }
 
-h3{
-    margin-bottom: 0;
+:root{
+    --clr-background: #eceff1;
+    --clr-white: #ffffff;
+    --clr-primary: #ff9a00;
+    --clr-gray: #263238;
+
+    --font-size: 16px;  
+    --border-radius: 0.2em;
 }
 
-.horas{
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size);
+    color: var(--clr-gray);
+    background-color: var(--clr-background);
 }
 
-.matinal{
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1em;
+}
+
+.container{
+    background-color: var(--clr-white);
+    border: var(--border-radius);
+    box-shadow: 8px 8px 4px #cfd0d2;
+    padding: 1em;
+    border-top: 4px solid var(--clr-primary);
+    height: auto;
 
 }
 
-.noturno{
-    
+#box-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.principal{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+
+@media screen and (max-width:750px){
+    body{
+       --font-size:16px; 
+    }
+
+    #box-grid{
+        grid-template-columns: 1fr;
+
+    }
+
+    .horas{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+    }
+
+    .h1{
+        margin: 0.5em 0;
+    }
 }
