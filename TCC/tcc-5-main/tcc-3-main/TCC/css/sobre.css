@@ -1,0 +1,45 @@
+
+.carousel {
+    position: relative;
+    width: 600px;
+    z-index: 0;
+}
+
+.CarroselSobre{
+    float: left;
+    padding-left: 10px;
+    margin-right: 50px;
+}
+
+.TextoSobre{
+    padding-left: 10px;
+    margin-left: 10px;
+    
+}
+
+.historiaTexto{
+    font-size: 20px;
+    padding: 30px;
+   
+}
+
+.Texto2{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.Missao{
+    font-size: 20px;
+    padding: 30px;
+
+}
+
+.Sobreh1{
+    margin-left: 30px;
+    color: white;
+}
+
+
+
+
+

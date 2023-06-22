@@ -1,0 +1,17 @@
+.carousel {
+    position: relative;
+    width: 600px;
+    z-index: 0;
+}
+
+.CarroselSobre{
+    float: left;
+    padding-left: 10px;
+
+}
+
+
+.TextoSobre{
+    padding-left: 10px;
+    margin-left: 10px;
+}
