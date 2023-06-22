@@ -1,5 +1,5 @@
 *{
-    box-style: borderbox;
+    box-sizing: border-box;
     margin: 8px;
 }
 
@@ -28,10 +28,44 @@ body{
     margin-top: -1em;
 }
 
-#box{
+#box-main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5em;
 }
 
+.container{
+    background-color: var(--clr-white);
+    border: var(--border-radius);
+    padding: 1em;
+    border-top: 4px solid var(--clr-primary);
+    height: auto;
 
+}
+
+h1{
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+@media screen and (max-width: 550px){
+    body{
+       --font-size:16px; 
+    }
+
+    #box-grid{
+        grid-template-columns: 1fr;
+
+    }
+
+    .horas{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+    }
+
+    .h1{
+        margin: 0.5em 0;
+    }
+}
